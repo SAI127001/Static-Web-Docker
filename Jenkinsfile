@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout Source Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/SAI127001/Mar-19_Task.git' 
+                git branch: 'master', credentialsID: 'git', url: 'https://github.com/SAI127001/Static-Web-Docker.git' 
             }
         }
 
